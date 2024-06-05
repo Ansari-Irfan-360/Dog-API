@@ -15,7 +15,7 @@ const DogDetails = ({ selectedDog, showModal, handleCloseModal }) => {
           top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
-          width: 400,
+          width: 275,
           bgcolor: "background.paper",
           border: "2px solid #000",
           boxShadow: 24,
@@ -29,7 +29,7 @@ const DogDetails = ({ selectedDog, showModal, handleCloseModal }) => {
             </Typography>
             <CardMedia
               component="img"
-              sx={{ maxHeight: '20%'}}
+              sx={{ maxHeight: '45vh'}}
               image={selectedDog.url}
               alt={selectedDog.breeds[0].name}
             />
