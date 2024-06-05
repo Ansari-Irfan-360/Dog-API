@@ -40,7 +40,7 @@ const DogDetails = ({ selectedDog, showModal, handleCloseModal }) => {
               <strong>Temperament:</strong> {selectedDog.breeds[0].temperament}
             </Typography>
             <Typography variant="body1">
-              <strong>Origin:</strong> {selectedDog.breeds[0].origin}
+              <strong>Origin:</strong> {selectedDog.breeds[0].origin == "" || {} ? "Not specified" : selectedDog.breeds[0].origin}
             </Typography>
             <Typography variant="body1">
               <strong>Life Span:</strong> {selectedDog.breeds[0].life_span}
